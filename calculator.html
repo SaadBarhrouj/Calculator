@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <form  name="clc"   action="">
+        <h1>Calculator</h1>
+        <div>
+         <input class="result" name="display"  style="font-size: 40px;"   type="text" readonly> <br>
+        <input  class="button"  type="button"  value="0" onclick="clc.display.value += '0'">
+        <input   class="button"type="button"  value="1" onclick="clc.display.value +='1'">
+        <input  class="button"type="button"   value="2" onclick="clc.display.value += '2'">
+        <input  class="button"type="button"value="+" style="background-color: rgb(181, 27, 181);" onclick="clc.display.value += '+'"><br>
+        <input  class="button"type="button"  value="3" onclick="clc.display.value += '3'">
+        <input  class="button" type="button" value="4" onclick="clc.display.value += '4'">
+        <input  class="button"type="button" value="5" onclick="clc.display.value += '5'">
+        <input  class="button" type="button" value="-" style="background-color: rgb(132, 132, 10)" onclick="clc.display.value += '-'"><br>
+        <input  class="button"type="button" value="6" onclick="clc.display.value += '6'">
+        <input   class="button"type="button" value="7" onclick="clc.display.value += '7'">
+        <input   class="button"type="button" value="8" onclick="clc.display.value += '8'">
+        <input   class="button"type="button" value="×" style="background-color:green;" onclick="clc.display.value += '*'"><br>
+        <input   class="button"type="button" value="9" onclick="clc.display.value += '9'">
+        <input   class="button"type="button" value="c" style="background-color:rgb(194, 12, 12);" onclick="clc.display.value=''">
+        <input   class="button"type="button" value="="  onclick="clc.display.value=eval(clc.display.value)">
+        <input   class="button"type="button" value="&#247" style="background-color:blue ;" onclick="clc.display.value += '/'">
+        </div>
+    </form>
+</body>
+</html>
